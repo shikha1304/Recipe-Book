@@ -1,0 +1,38 @@
+
+#SearchForm input[type=search]{
+    width:600px !important;
+    height: 7vh;
+    border-radius: 9px;
+    background-color: aliceblue;
+    margin-left: 50px!important;
+}
+
+#SearchForm input[type=search]:hover{
+    transform: scale(1.10);
+    border-color: seagreen;
+    border-style:groove;
+}
+.btn{
+    background-color: aliceblue!important;
+}
+
+mat-form-field{
+    margin-right: 500px;
+    margin-left: 200px;
+    font-size: 17px;
+}
+
+option{
+    font-size: 20px;
+}
+
+.create-btn{
+    font-size: 20px;
+    padding: 5px;
+}
+.filter{
+    background-color: aliceblue;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px;
+}

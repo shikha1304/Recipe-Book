@@ -1,0 +1,43 @@
+.navbar{
+    background-color: rgb(255,255,255,0.4);
+}
+
+.container-fluid .navbar-brand{
+    color: #2E8B57;
+    font-weight: bold;
+    font-size:30px;
+}
+
+a{
+    font-size: 20px;
+    margin-left: 5px;
+    color: black;
+}
+
+a:hover{
+    transform: scale(1.15);
+    margin: 5px;
+    color: seagreen!important;
+}
+
+#button{
+    border-radius: 7px;
+}
+#button:hover {
+    background-color: seagreen!important;
+    color: white!important;
+
+}
+
+.mat-menu-panel {
+    position: absolute !important;
+    top: 100% !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+  }
+   
+  .nav-link:hover .mat-menu-panel {
+    visibility: visible;
+    opacity: 1;
+  }

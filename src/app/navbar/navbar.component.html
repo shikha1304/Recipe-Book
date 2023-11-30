@@ -1,0 +1,33 @@
+<nav class="navbar sticky-top navbar-expand-md px-2 py-3 mb-3">
+    <div class="container-fluid">    
+        <a class="navbar-brand fs-6 initialism" routerLink="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav Home-nav-list mx-2">  
+                <div class="d-flex justify-content-center align-items-center">
+                <a class="nav-link" routerLink="/recipe/catalog">Recipe Catalog</a>
+                <a class="nav-link" routerLink="/user/profile">Profile</a>
+                <a class="nav-link" routerLink="/recipe/favorites">Favorites</a>
+                <a class="nav-link" routerLink="/recipe/collections">Collections</a>
+                <a class="nav-link" routerLink="/cart/shopping-list">Cart</a>
+                </div>    
+            </div>  
+        </div>  
+        <div class="collapse navbar-collapse justify-content-end">
+            <div class="navbar-nav Home-nav-list d-flex align-items-center">
+                <div class="d-flex">
+                    <a class="nav-link p-3" role="button" id="button" *ngIf="!login(); else noUser" [routerLink]="['/login']">Login  <i class="bi bi-box-arrow-left"></i></a>   
+                    <a class="nav-link p-3" role="button" id="button" *ngIf="!login()" routerLink="/registration">Register  <i class="bi bi-person-fill-add"></i></a>
+                    <ng-template #noUser>
+                        <a class="nav-link p-3" role="button" id="button" (click)="onLogOut()">LogOut <i class="bi bi-box-arrow-right"></i></a>
+                      </ng-template>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+

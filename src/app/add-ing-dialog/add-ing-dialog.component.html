@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-title">
+        <h1>Add Ingredients</h1>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formData">
+            <mat-form-field class="mx-2">
+                <mat-label>Ingredient</mat-label>
+                <input matInput formControlName="name" required>
+            </mat-form-field>
+            <mat-form-field class="mx-2">
+                <mat-label>Measurement/Amount/Capacity</mat-label>
+                <input matInput formControlName="ingredient">
+            </mat-form-field>
+            <mat-form-field class="mx-2">
+                <mat-label>Quantity</mat-label>
+                <input matInput formControlName="quantity" required>
+            </mat-form-field>
+            <div class="d-flex justify-content-end">
+            <button mat-raised-button color="primary" class="mr-2" (cl)="onSubmit()">Save</button>
+            <button mat-raised-button color="primary" class="ml-2" (click)="onCancel()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
