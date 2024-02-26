@@ -1,6 +1,17 @@
-# RecipeBook
 
+# Recipe-Book
+
+A web application intended for users to use as their own recipe library. They can search for recipes, add them to favorites, make changes and add them to collection section and can make a shopping list of ingredients.
+**Angular** is used as the frontend along with **Typescript**. 
+**Json-server** has been used as the pseudo database.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+
+## Screenshots
+
+![App Screenshot](https://github.com/shikha1304/Recipe-Book/blob/a1d69fa3d91cb972a9ce1bb519a65f51b70c8309/src/assets/Screenshots/Screenshot%20(11).png)
+![App Screenshot](https://github.com/shikha1304/Recipe-Book/blob/a1d69fa3d91cb972a9ce1bb519a65f51b70c8309/src/assets/Screenshots/Screenshot%20(12).png)
+![App Screenshot](https://github.com/shikha1304/Recipe-Book/blob/a1d69fa3d91cb972a9ce1bb519a65f51b70c8309/src/assets/Screenshots/Screenshot%20(13).png)
+![App Screenshot](https://github.com/shikha1304/Recipe-Book/blob/a1d69fa3d91cb972a9ce1bb519a65f51b70c8309/src/assets/Screenshots/Screenshot%20(14).png)
 
 ## Development server
 
