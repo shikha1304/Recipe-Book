@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-title">
+        <h1>Add Instructions</h1>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <mat-label>Add Instruction</mat-label>
+                <textarea matInput formControlName="instruction"></textarea>
+            </mat-form-field>            
+            <div class="d-flex justify-content-end">
+                <button mat-raised-button color="primary" class="mr-2">Save</button>
+                <button mat-raised-button color="primary" class="ml-2" (click)="onCancel()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+

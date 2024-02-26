@@ -1,0 +1,24 @@
+<section class="section about-section gray-bg" id="about">
+    <div class="container">
+        <div class="header">
+            <h1>Shopping Cart</h1>
+        </div>
+        <div class="content m-2 p-5">
+            <div class="row align-items-center" *ngFor="let item of list" >
+                <div class="col-lg-4" >
+                    <p>{{item.item}}</p>
+                </div>
+                <div class="col-lg-2" >
+                    <p>{{item.quantity}}</p>
+                </div>
+                <div class="col-lg-4" >
+                    <button mat-button (click)="onAdd(item)"><mat-icon class="sign mr-2">add</mat-icon></button>
+                    <button mat-button (click)="onRemove(item)"><mat-icon class="sign ml-2">remove</mat-icon></button>
+                </div>
+                <div class="col-lg-2" >
+                    <button mat-button (click)="onDelete(item.id)"><mat-icon>delete_outline</mat-icon></button>
+                </div>
+            </div>
+        </div>  
+    </div>
+</section>

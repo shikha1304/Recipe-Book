@@ -1,0 +1,18 @@
+<div class="row ">
+    <div class="col-sm-3 my-2" *ngFor="let recipe of favorites">
+        <div class="card" style="background-color: rgb(221, 234, 247)" >
+        <div class="card-body" >
+            <img class="card-img-top" [src]="recipe.img" alt="Card image cap" (click)="onCardClick(recipe)">
+            <h2 class="card-title" style="text-align: center;">{{ recipe.title }}</h2>
+            <div class="d-flex justify-content-end">
+                <button mat-button (click)="onDislike(recipe.id)" ><mat-icon>favorite</mat-icon></button>
+                <!-- <button mat-button *ngIf="liked" ><i class="bi bi-heart-fill" style="font-size:24px;"></i></button>  -->
+            </div>   
+        </div>
+    </div>
+    <div *ngIf="Favs">
+        <h3>You have not selected any favorites yet!!</h3>
+    </div>
+    
+</div>
+</div>

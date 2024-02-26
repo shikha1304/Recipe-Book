@@ -1,0 +1,36 @@
+.card{
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border-style:groove;
+    border-width: 3px;
+    border-color: seagreen;
+    font-weight:bolder!important;
+}
+
+.btn{
+    border-color: seagreen;
+    border-style:groove;
+    border-radius: 9px;
+    border-width: 2px;
+}
+
+.btn:hover{
+    background-color: seagreen;
+    color: white;
+}
+
+a{
+    color: seagreen;
+}
+
+input{
+    border-radius: 9px;
+    background-color: rgb(255,255,255,0.9)!important;
+}
+input:hover{
+    transform: scale(1.05);
+}
+
+input.ng-invalid.ng-touched{
+    border-color: red;
+}

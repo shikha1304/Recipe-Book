@@ -1,0 +1,71 @@
+
+<section class="section about-section gray-bg" id="about">
+    <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6">
+                <div class="about-text go-to">
+                    <h3 class="dark-color">{{ recipe.title }}</h3>
+                    <div class="about-list">
+                        <div class="">
+                            <div class="media">
+                                <h2>Ingredients:<button mat-button (click)="addIng(recipe)"><mat-icon>add_box</mat-icon></button></h2>
+                            </div>
+                            <div class="ingredients-list">
+                                <ul *ngFor="let i of recipe.ingredients, index as ind">
+                                   <li>
+                                    <span class="mr-5">{{i.quantity}} of {{i.ingredient}} {{i.name}}</span><button mat-button (click)="removeIng(ind)"><mat-icon>delete_outline</mat-icon></button>
+                                   </li> 
+                                </ul>
+                            </div>
+                            <div class="media">
+                                <h2>Nutritional Information:<button mat-button (click)="editInfo(recipe)"><mat-icon>edit</mat-icon></button></h2>
+                            </div>
+                            <div class="media">
+                                <ul >
+                                    <label>Calories:</label>
+                                    <li>{{recipe.nutritional_information.calories}}</li>
+                                </ul>
+                                <ul >
+                                    <label>Protein:</label>
+                                    <li>{{recipe.nutritional_information.protein}}</li>
+                                </ul>
+                                <ul >
+                                    <label>Carbohydrates:</label>
+                                    <li>{{recipe.nutritional_information.carbohydrates}}</li>
+                                </ul>
+                                <ul >
+                                    <label>Fat:</label>
+                                    <li>{{recipe.nutritional_information.fat}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-2">
+                <div class="about-avatar">
+                    <img class="card-img-top" [src]="recipe.img" alt="Card image cap">   
+                </div>
+            </div>
+        </div>
+        <div class="counter">
+                                
+            <h2>Instructions: <button mat-button (click)="addIns(recipe)"><mat-icon>add_box</mat-icon></button></h2>
+            <ul *ngFor="let ins of recipe.instructions">
+                <li><p>{{ins}}</p></li>
+            </ul>                       
+            <hr>  
+            <div class="d-flex">
+                <h4 class="mr-5">Recipe Created On: <i>{{ recipe.creationDate }}</i></h4>
+                <h4 class="mx-5">Recipe Created By UserId: <i>{{ recipe.creatorId }}</i></h4>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button mat-raised-button color="primary">Done</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+

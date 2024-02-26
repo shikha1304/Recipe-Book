@@ -1,0 +1,34 @@
+<div class="row recipe-header d-flex">
+    <form class="form-inline mx-2 my-0" id="SearchForm">
+                    
+        <div class="input-group-append">
+            <input class="form-control input-group-lg p-4 mx-2" type="search" name="search" autocomplete="off" placeholder="Search for a recipe by name, ingredients or category" #search>
+            <button mat-button class="btn" (click)="filterResultsByName(search.value)"><i class="bi bi-search"></i></button>
+        </div>
+        
+    </form>
+
+    
+    <mat-form-field class="filter">
+        <mat-label>Filter by Category</mat-label>
+        <select matNativeControl required [(ngModel)]="cat" (change)="filterResultsByCat()">
+          <option value="1">Indian Cuisine</option>
+          <option value="2">Breakfast</option>
+          <option value="3">Beverages</option>
+          <option value="4">Dessert</option>
+        </select>
+      </mat-form-field>
+
+      <div class="btn">
+        <button mat-button class="create-btn"(click)="onCreate()">Create Recipe</button>
+    </div>
+    
+</div>
+
+<div class="mx-2 my-5" *ngIf="condition">
+    <app-filter [item]="filteredList"></app-filter>
+  </div>
+  
+  <div class="mx-2 my-5" *ngIf="!condition">
+    <app-filter [item]="recipes"></app-filter>
+  </div>

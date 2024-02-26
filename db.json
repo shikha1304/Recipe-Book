@@ -1,0 +1,17 @@
+{
+    "users" : [
+        {
+            "userId" : 1,
+            "name" : "Pralipta",
+            "email" : "pralipta123@gmail.com",
+            "password" : "Pralipta_231",
+            "registrationDate" : "21-2-2021"
+        }
+    ],
+
+    "recipes" : [
+        {
+
+        }
+    ]
+}

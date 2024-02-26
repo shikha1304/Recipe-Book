@@ -1,0 +1,20 @@
+<div class="row mt-2">
+    <div class="col-sm-3 my-2" *ngFor="let recipe of item">
+        <div class="card" style="background-color: rgb(221, 234, 247)" >
+        <div class="card-body">
+            <img class="card-img-top" [src]="recipe.img" alt="Card image cap" (click)="onCardClick(recipe)">
+            <h2 class="card-title" style="text-align: center;">{{ recipe.title }}</h2>
+           
+            <div class="d-flex justify-content-end">
+                <button mat-button (click)="onLike(recipe)" ><mat-icon>favorite_border</mat-icon></button>
+                <button mat-button (click)="onSave(recipe)" ><mat-icon>bookmark_border</mat-icon></button>
+            </div>
+             
+            <!-- <i style="font-size:24px;color:red" class="fa"></i> -->
+        </div>
+    </div>   
+</div>
+
+ 
+</div>
+

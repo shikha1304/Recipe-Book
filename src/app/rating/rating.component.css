@@ -1,0 +1,21 @@
+div{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+h2{
+    margin-right: 10px;
+}
+
+div > div {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+mat-icon{
+    font-size: 30px;
+    color: #ff9800;
+}
