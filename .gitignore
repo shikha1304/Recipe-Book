@@ -40,3 +40,29 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Frontend (Angular/React)
+Web/node_modules/
+Web/.angular/cache/
+Web/.npm/
+
+# Backend (Node.js/Express/Spring Boot)
+backend/node_modules/
+backend/.cache/
+backend/.npm/
+backend/.env
+
+# Logs
+logs/
+*.log
+
+# IDE/Editor files
+.vscode/
+*.iml
+
+# Build/Compiled files
+dist/
+build/
+out/
+
+Web/.angular/cache/
